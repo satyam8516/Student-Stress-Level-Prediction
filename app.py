@@ -1,9 +1,10 @@
 import streamlit as st
+import pandas as pd
 import joblib
 import numpy as np
 
 model = joblib.load("student_stress_model.pkl")
-scaler = joblib.load("scaler.pkl")
+scaler = joblib.load("Scaler.pkl")
 
 st.title("Student Stress Level Prediction")
 st.write("Enter the student's details below to predict the stress level.")
